@@ -1,17 +1,17 @@
-COMPILADOR = g++
-PARAMETROS = -Wall -std=c++11 -g -c
+COMPILER = g++
+PARAMS = -Wall -std=c++11 -g -c
 SRC = ../src/
-CABECERAS = -I../include/
-COMPILAR_OBJETO = $(COMPILADOR) $(CABECERAS) $(PARAMETROS) -o $(@) $(^)
+HEADERS = -I../include/
+COMPILE_OBJECT = $(COMPILER) $(HEADERS) $(PARAMS) -o $(@) $(^)
 
 main.exe: main.o bst.o
-	$(COMPILADOR) $(CABECERAS) -g -o $@ $^
+	$(COMPILER) $(HEADERS) -g -o $@ $^
 
-main.o: testy.cpp
-	$(COMPILAR_OBJETO)
+main.o: test.cpp
+	$(COMPILE_OBJECT)
 
 bst.o: $(SRC)bst.cpp
-	$(COMPILAR_OBJETO)
+	$(COMPILE_OBJECT)
 
 clean:
 	rm -f *.o *.exe
