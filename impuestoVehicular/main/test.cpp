@@ -1,9 +1,10 @@
+#include <iostream>
 #include <Vehiculo.h>
 #include <Moto.h>
 #include <VdeCarga.h>
-#include <iostream>
 
 int main() {
+
 	Vehiculo carro;
 	Moto moto;
 	VehiculoDeCarga camion;
@@ -16,9 +17,11 @@ int main() {
 	std::cout << "CC del motor de la moto: " << moto.getMotorCC() << "\n";
 	
 	moto.setMotorCC(1234.5678);
+	
 	std::cout << "El monto extra de la moto es: " << moto.calcularMontoExtra() << "\n";
 	std::cout << "CC del motor de la moto: " << moto.getMotorCC() << "\n";
 	
 	std::cout << "La tasa es " << moto.getTasa() << std::endl;
-}
 
+return 0;
+}

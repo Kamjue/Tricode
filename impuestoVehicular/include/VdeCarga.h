@@ -1,5 +1,5 @@
 #ifndef VDECARGA_H
-#define VDECARGA_H
+	#define VDECARGA_H
 
 #include <Vehiculo.h>
 

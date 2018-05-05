@@ -38,3 +38,6 @@ float Vehiculo::getTasa() {
 	return this -> tasa;
 }
 
+float Vehiculo::calcularMontoExtra(){
+	return 0;
+}

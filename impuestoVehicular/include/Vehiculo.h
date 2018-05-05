@@ -1,5 +1,5 @@
 #ifndef VEHICULO_H
-#define VEHICULO_H
+	#define VEHICULO_H
 
 #include <string>
 
@@ -21,7 +21,7 @@ class Vehiculo {
 		void setCostoActual(float);
 		float getTasa();
 		
-		//	virtual float calcularMontoExtra();
+		virtual float calcularMontoExtra();
 };
 
 #endif
