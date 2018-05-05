@@ -1,11 +1,11 @@
-COMPILER = g++
+CXX = g++
 PARAMS = -Wall -std=c++11 -g -c
 SRC = ../src/
 HEADERS = -I../include/
-COMPILE_OBJECT = $(COMPILER) $(HEADERS) $(PARAMS) -o $(@) $(^)
+COMPILE_OBJECT = $(CXX) $(HEADERS) $(PARAMS) -o $(@) $(^)
 
 main.exe: main.o bst.o
-	$(COMPILER) $(HEADERS) -g -o $@ $^
+	$(CXX) $(HEADERS) -g -o $@ $^
 
 main.o: test.cpp
 	$(COMPILE_OBJECT)
