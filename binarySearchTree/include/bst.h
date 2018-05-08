@@ -1,5 +1,5 @@
-#ifndef BST
-#define BST
+#ifndef BST_H
+#define BST_H
 
 # include <node.h>
 # include <iostream>
