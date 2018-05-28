@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -Wall -std=c++11
-SRC = ../src/
-INCLUDE = -I ../include/
+SRC = ./src/
+INCLUDE = -I ./include/
 COMPILE = $(CXX) $(CXXFLAGS) -c $^ $(INCLUDE)
 
 test.exe: test.o Moto.o VdeCarga.o Vehiculo.o
