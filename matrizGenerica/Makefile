@@ -9,6 +9,12 @@ main.exe: main.o Circulo.o Cuadrado.o
 main.o: main.cpp
 	$(CXX) $(CXXFLAGS) -c $^ $(INCLUDE)
 
+test.exe: test.o Circulo.o Cuadrado.o
+	$(CXX) $(CXXFLAGS) $^ -o $@
+
+test.o: test.cpp
+	$(CXX) $(CXXFLAGS) -c $^ $(INCLUDE)
+
 Circulo.o: $(SRC)Circulo.cpp
 	$(CXX) $(CXXFLAGS) -c $^ $(INCLUDE)
 
@@ -17,4 +23,4 @@ Cuadrado.o: $(SRC)Cuadrado.cpp
 
 
 clean:
-	rm -f *.o main.exe
+	rm -f *.o *.exe
